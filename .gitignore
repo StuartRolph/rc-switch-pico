@@ -1,16 +1,35 @@
+# macOS
 .DS_Store
+
+# Build output
+/build/
+/build-*/
+
+# CMake files, including those generated in-source by `cmake .`
 CMakeFiles/
+CMakeCache.txt
+CMakeScratch/
+CMakeDoxyfile.in
+CMakeDoxygenDefaults.cmake
+CTestTestfile.cmake
+cmake_install.cmake
+pkgRedirects/
+compile_commands.json
+Makefile
+
+# Pico SDK generated directories
 elf2uf2/
 generated/
 pico-sdk/
-CMakeCache.txt
-CMakeDoxyfile.in
-CMakeDoxygenDefaults.cmake
-Makefile
-cmake_install.cmake
+
+# Firmware and object artifacts
 *.bin
 *.dis
 *.elf
 *.elf.map
+*.map
 *.hex
 *.uf2
+*.o
+*.obj
+*.a
